@@ -1,4 +1,4 @@
-#This code outputs all observations with no codes
+#This script searches for checklists with no codes on them and outputs all observtions from those checklists
 #Thanks to Nick Walton for this
 #May want to filter by portal and also check for nocturnals
 
