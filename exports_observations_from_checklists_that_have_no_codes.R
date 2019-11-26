@@ -15,5 +15,5 @@ sp <- sp[sp[, if(all(BREEDING.BIRD.ATLAS.CATEGORY %in% no_code)) .I,
 
 fwrite(sp, file = "myfile.txt", sep = "\t", nThread = n_core)
 
-# IF TXT FILE NEEDED write.table(MyData, "ALLATLASWISEPT19_2.txt", sep="\t", row.names = FALSE, col.names = TRUE)
+
 
