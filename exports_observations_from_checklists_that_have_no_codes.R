@@ -2,6 +2,8 @@
 #Thanks to Nick Walton for this
 #May want to filter by portal and also check for nocturnals
 
+BEFORE CHECKING FOR CHECKLISTS WITH NO CODES, NEED TO MERGE IN SENSITIVE SPECIES, AND UN 0s!
+
 # This version should work with the raw ebird txt file
 
 library(data.table)
