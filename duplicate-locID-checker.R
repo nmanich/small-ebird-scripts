@@ -11,6 +11,11 @@ ebirddata$POINTLOCATION <-  with(ebirddata, paste0(LATITUDE, LONGITUDE))
 #keep only unique locationids (you wind up with one row per each location)
 uniquelocations <- ebirddata[!duplicated(ebirddata$LOCALITY.ID), ]
 
+
+# OPTION 1: STOP HERE AND USE EXCEL TO PIVOTTABLE THIS TABLE:
+write.csv(uniquelocations, file = "uniquelocations.csv")
+
+# OPTION 2: THE BELOW CODE WORKS FOR SMALL FILES BUT HAS VERY LONG RUN TIMES ON BIG FILES:
 #makes a pivottable
 pt <- PivotTable$new()
 pt$addData(uniquelocations)
