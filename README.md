@@ -5,7 +5,7 @@ Little scripts that split something off or summarize the big EBD download.
 
 2. Exports-checklists-with-no-codes - This script searches for checklists with no codes on them and outputs all observtions from those checklists.
 
-3. speccies-per-checklist - returns the number of species on each checklist.
+3. species-per-checklist - returns the number of species on each checklist.
 
 4. split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
 
