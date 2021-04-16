@@ -5,10 +5,12 @@ Little scripts that split something off or summarize the big EBD download.
 
 2. Exports-checklists-with-no-codes - This script searches for checklists with no codes on them and outputs all observtions from those checklists.
 
-3. species-per-checklist - returns the number of species on each checklist.
+3. one-row-per-speices-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
 
-4. split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
+4. species-per-checklist - returns the number of species on each checklist.
 
-5. summing-observer-time - A pivot-table like script that sums birding time by observer.
+5. split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
 
-6. unique-locations - This calculates the number of unique locations in the file.
+6. summing-observer-time - A pivot-table like script that sums birding time by observer.
+
+7. unique-locations - This calculates the number of unique locations in the file.
