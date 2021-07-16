@@ -1,0 +1,21 @@
+#this searches for duplicate location IDs in eBird for the exact lat long from a specific observer
+
+library(dplyr)
+
+#load ebird data
+ebird <- read.delim("ebd_wiltur_201501_201912_relJun-2021WI.txt", sep="\t", header=TRUE, quote = "", stringsAsFactors = FALSE, na.strings=c(""))
+
+# concatenate latitude and longitude
+ebird$concatlatlongobserver <-  with(ebird, paste0(LATITUDE, LONGITUDE, OBSERVER.ID))
+
+#screen for duplicate locids at single location
+thetibble <-(ebird %>% 
+  select(concatlatlongobserver, LOCALITY.ID) %>% 
+  group_by(concatlatlongobserver) %>% 
+  filter(n_distinct(LOCALITY.ID) > 1))
+
+#remove duplicates within the above file
+thetibble2 <- unique(thetibble)
+
+#export table
+write.csv(thetibble2, file = "duplicatelocid.csv")
