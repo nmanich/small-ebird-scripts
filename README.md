@@ -1,7 +1,7 @@
 # small-ebird-scripts
 Little scripts that split something off or summarize the big EBD download.
 
-1. Duplicate-locID-checker2 - searches for point locations in eBird that map to more than one LocID (which can result in point locations not showing on the map). 
+1. Duplicate-locID-checker3 - searches for point locations in eBird that map to more than one LocID (which can result in point locations not showing on the map). 
 
 2. Exports-checklists-with-no-codes - This script searches for checklists with no codes on them and outputs all observtions from those checklists.
 
