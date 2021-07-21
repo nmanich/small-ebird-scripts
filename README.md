@@ -1,16 +1,18 @@
 # small-ebird-scripts
 Little scripts that split something off or summarize the big EBD download.
 
-1. Duplicate-locID-checker3 - searches for point locations in eBird that map to more than one LocID (which can result in point locations not showing on the map). 
+Duplicate-locID-checker3 - searches for point locations in eBird that map to more than one LocID (which can result in point locations not showing on the map).
 
-2. Exports-checklists-with-no-codes - This script searches for checklists with no codes on them and outputs all observtions from those checklists.
+eBird-checklist-collator - Takes downloaded ebird checklists (downloaded by the user from the checklist URL page) and loads them in bulk into a single csv.
 
-3. one-row-per-speices-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
+Exports-checklists-with-no-codes - This script searches for checklists with no codes on them and outputs all observtions from those checklists.
 
-4. species-per-checklist - returns the number of species on each checklist.
+one-row-per-speices-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
 
-5. split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
+species-per-checklist - returns the number of species on each checklist.
 
-6. summing-observer-time - A pivot-table like script that sums birding time by observer.
+split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
 
-7. unique-locations - This calculates the number of unique locations in the file.
+summing-observer-time - A pivot-table like script that sums birding time by observer.
+
+unique-locations - This calculates the number of unique locations in the file.
