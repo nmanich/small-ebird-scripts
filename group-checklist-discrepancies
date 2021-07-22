@@ -1,4 +1,4 @@
-#check for specific records treated differently on 2 different group ids
+#checks for records on a shared group ID that are coded differently 
 
 library(dplyr)
 library(tidyverse)
