@@ -7,6 +7,8 @@ eBird-checklist-collator - Takes downloaded ebird checklists (downloaded by the 
 
 Exports-checklists-with-no-codes - This script searches for checklists with no codes on them and outputs all observtions from those checklists.
 
+group-checklist-discrepancies - checks for records on a shared group ID that are coded differently 
+
 one-row-per-speices-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
 
 species-per-checklist - returns the number of species on each checklist.
