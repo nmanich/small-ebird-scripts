@@ -3,6 +3,8 @@ Little scripts that split something off or summarize the big EBD download.
 
 codes-per-checklist - sums the number of higher coded records (i.e. not F) per checklist. Beware - will not catch hidden sensitive species.
 
+drop-outportaled-rows - you load in a file with submission IDs that you want out of the EBD, and this removes all rows matching those subIDs.
+
 duplicate-locID-checker3 - searches for point locations in eBird that map to more than one LocID (which can result in point locations not showing on the map).
 
 eBird-checklist-collator - Takes downloaded ebird checklists (downloaded by the user from the checklist URL page) and loads them in bulk into a single csv.
