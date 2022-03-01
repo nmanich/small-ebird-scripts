@@ -21,7 +21,9 @@ species-per-checklist - returns the number of species on each checklist.
 
 split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
 
-split-EBD-by-family - Splits the EBD download into separate csv files by family.
+split-EBD-by-family - Splits the EBD download into separate csv files by bird family.
+
+split-EBD-by-year - Splits the EBD download into separate csv files by year.
 
 summing-observer-time - A pivot-table like script that sums birding time by observer.
 
