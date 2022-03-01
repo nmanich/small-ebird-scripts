@@ -13,7 +13,7 @@ exports-checklists-with-no-codes - This script searches for checklists with no c
 
 extract-rows - Simple way to pull out rows based on matching specific text in a column.
 
-group-checklist-discrepancies - Checks for records on a shared group ID that are coded differently 
+group-checklist-discrepancies - Checks for records on a shared group ID that are coded differently. 
 
 one-row-per-species-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
 
