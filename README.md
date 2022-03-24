@@ -15,6 +15,8 @@ extract-rows - Simple way to pull out rows based on matching specific text in a 
 
 group-checklist-discrepancies - Checks for records on a shared group ID that are coded differently. 
 
+input-and-output - Pinning different ways to input and output eBird data.
+
 one-row-per-species-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
 
 species-per-checklist - Returns the number of species on each checklist.
