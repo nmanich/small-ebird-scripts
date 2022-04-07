@@ -9,7 +9,7 @@ ebird2 <- read.delim("ebd_US-WI_201501_201912_relJan-2022.txt", sep="\t", header
 # read in an EBD format csv file (presumably spit out of something else):
 ebird <- read.csv("ebd_US-WI_201501_201912_relJan-2022.csv")
 
-# use R to read in an EBD format txt file:
+# use auk to read in an EBD format txt file:
 library(auk)
 ebd <- read_ebd("ebd_US-WI_201501_201912_relJan-2022.txt", unique = FALSE, rollup = FALSE)
 
