@@ -1,5 +1,7 @@
 # Searching for a bug in eBird code review
 
+library(dplyr)
+
 # Load EBD
 ebird2 <- read.delim("ebd_US-WI_201501_201912_relMar-2022.txt", sep="\t", header=TRUE, quote = "", stringsAsFactors = FALSE, na.strings=c(""))
 
