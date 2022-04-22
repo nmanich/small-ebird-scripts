@@ -1,6 +1,8 @@
 # small-ebird-scripts
 Little scripts that split something off or summarize the big EBD download.
 
+code_discrepancies - Searching for a 4/2022 bug in how back-end breeding codes are changed in eBird
+
 codes-per-checklist - Sums the number of higher coded records (i.e. not F) per checklist. Beware - will not catch hidden sensitive species.
 
 drop-outportaled-rows - You load in a file with submission IDs that you want out of the EBD, and this removes all rows matching those subIDs.
