@@ -5,6 +5,8 @@ code_discrepancies - Searching for a 4/2022 bug in how back-end breeding codes a
 
 codes-per-checklist - Sums the number of higher coded records (i.e. not F) per checklist. Beware - will not catch hidden sensitive species.
 
+column-name-fixing - Takes column names from UPPERCASE.SPACE.AS.PERIOD to snake_case and vice versa.
+
 drop-outportaled-rows - You load in a file with submission IDs that you want out of the EBD, and this removes all rows matching those subIDs.
 
 duplicate-locID-checker3 - Searches for point locations in eBird that map to more than one LocID (which can result in point locations not showing on the map).
