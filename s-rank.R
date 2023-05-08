@@ -2,6 +2,7 @@
 # limits to species, adjusts formatting, spits out one file per species
 
 library(plyr) #for splitting
+library(stringr) #for lowercase
 
 # import EBD
 ebird <- read.delim("ebd_US-WI-021_201501_201808_relMay-2018.txt", quote = "", as.is = TRUE)
@@ -19,8 +20,12 @@ BIRDS  <- BIRDS[BIRDS$CATEGORY == "species", ]
 # pull out certain columns to format
 BIRDS <- BIRDS[,c("GLOBAL.UNIQUE.IDENTIFIER", "COMMON.NAME", "LOCALITY", "LATITUDE", "LONGITUDE")]
 
+# lowercase names
+names(BIRDS) <- tolower(names(BIRDS))
+colnames(BIRDS) <- str_replace_all(colnames(BIRDS), "[:punct:]", "_")
+
 # split into separate csv files by species
-d_ply(BIRDS, .(COMMON.NAME),
+d_ply(BIRDS, .(common_name),
       function(BIRDS) write.csv(BIRDS,
-                                file=paste(BIRDS$COMMON.NAME[[1]],".csv", sep=""), row.names=FALSE ))
+                                file=paste(BIRDS$common_name[[1]],".csv", sep=""), row.names=FALSE ))
 
