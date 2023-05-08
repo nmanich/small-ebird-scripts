@@ -9,7 +9,7 @@ ebird <- read.delim("ebd_US-WI-021_201501_201808_relMay-2018.txt", quote = "", a
 
 # pull out only categories with codes
 ebird <- ebird[grepl("C2|C3|C4"
-                     , ebird$BREEDING.BIRD.ATLAS.CATEGORY), ]
+                     , ebird$BREEDING.CATEGORY), ]
 
 # limit to just atlas data
 ebird  <- ebird[ebird$PROJECT.CODE == "EBIRD_ATL_WI", ]
