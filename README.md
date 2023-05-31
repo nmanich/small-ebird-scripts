@@ -25,6 +25,8 @@ obsposs-extraction - Pulls out the joint observed/possible species for WBBA.
 
 one-row-per-species-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
 
+replace-single-breeding-code - manual replacement of a single breeding code and category 
+
 species-per-checklist - Returns the number of species on each checklist.
 
 s-rank - Pulls specific species and certain columns, and outputs one csv per species.
