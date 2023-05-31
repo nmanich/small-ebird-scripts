@@ -1,0 +1,8 @@
+# manual replacement of a breeding code in the EBD
+# useful to catch up the masterEBD if a single change is made online
+# purposefully clunky, uses OBSID and original value so you don't screw anything else up
+
+# replace breeding code
+fullebd$BREEDING.CODE[fullebd$BREEDING.CODE == "NC" & fullebd$GLOBAL.UNIQUE.IDENTIFIER == 'URN:CornellLabOfOrnithology:EBIRD:OBS491498268'] <- "H"
+# replace breeding category
+fullebd$BREEDING.CATEGORY[fullebd$BREEDING.CATEGORY == "C1" & fullebd$GLOBAL.UNIQUE.IDENTIFIER == 'URN:CornellLabOfOrnithology:EBIRD:OBS491498268'] <- "C2"
