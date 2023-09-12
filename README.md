@@ -31,6 +31,8 @@ species-per-checklist - Returns the number of species on each checklist.
 
 s-rank - Pulls specific species and certain columns, and outputs one csv per species.
 
+sensitive_species_per_block - filters the records down to the single highest breeding category per block
+
 split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
 
 split-EBD-by-family - Splits the EBD download into separate csv files by bird family.
