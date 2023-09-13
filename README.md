@@ -1,6 +1,8 @@
 # small-ebird-scripts
 Little scripts that split something off or summarize the big EBD download.
 
+AOS_taxonomy - keeps my 2023/2024 files in line with current AOS taxonomy
+
 code_discrepancies - Searching for a 4/2022 bug in how back-end breeding codes are changed in eBird
 
 codes-per-checklist - Sums the number of higher coded records (i.e. not F) per checklist. Beware - will not catch hidden sensitive species.
