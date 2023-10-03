@@ -43,4 +43,8 @@ split-EBD-by-year - Splits the EBD download into separate csv files by year.
 
 summing-observer-time - A pivot-table like script that sums birding time by observer.
 
+tallying-block-categories-all-blocks - calculates the highest code per block and tallies up possible, probable, confirmed blocks for each species
+
+tallying-block-categories-faircompare - calculates the highest code for just faircompare blocks and tallies up possible, probable, confirmed blocks for each species
+
 unique-locations - This calculates the number of unique locations in the file.
