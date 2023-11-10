@@ -125,6 +125,12 @@ allin <- rbind(in1, in2, in3, in4, in5, in6, in7, in8, in9, in10, in11, in12, in
 
 # NOTE: FOR POSTERITY, COULD ADD A FINAL STEP HERE WHERE POSSIBLE CODES DUPLICATE TO A NEW COLUMN AND ARE RENAMED WITH THEIR NEW OBSPOSS CODE
 
+# deals with some NAs
+allin$BREEDING.CODE[is.na(allin$BREEDING.CODE)] <- "NC"
+allin$BREEDING.CATEGORY[is.na(allin$BREEDING.CATEGORY)] <- "C1"
+allout$BREEDING.CODE[is.na(allout$BREEDING.CODE)] <- "NC"
+allout$BREEDING.CATEGORY[is.na(allout$BREEDING.CATEGORY)] <- "C1"
+
 # remove white space 
 allout$BREEDING.CODE <- trimws(allout$BREEDING.CODE)
 allout$BREEDING.CATEGORY <- trimws(allout$BREEDING.CATEGORY)
