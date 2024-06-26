@@ -7,6 +7,9 @@ ebird$COMMON.NAME <- gsub("Black-crowned Night Heron", "Black-crowned Night-Hero
 To bring early 2023 file up to AOS taxonomy, then:
 
 ebird$COMMON.NAME <- gsub("Northern Goshawk", "American Goshawk", ebird$COMMON.NAME)
+ebird$COMMON.NAME <- gsub("House Wren", "Northern House Wren", ebird$COMMON.NAME)
+ebird$COMMON.NAME <- gsub("Herring Gull", "American Herring Gull", ebird$COMMON.NAME)
+ebird$COMMON.NAME <- gsub("Barn Owl", "American Barn Owl", ebird$COMMON.NAME)
 
 
 
