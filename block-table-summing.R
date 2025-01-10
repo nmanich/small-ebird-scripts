@@ -1,4 +1,4 @@
-#summarizing and formatting block detections tables for WBBA book
+#summarizing and formatting block tables for WBBA book
 # 12/17/24 Nick Anich with my typical remedial help from Gabriel birdnirdfoley
 
 # The first step is summarizing the EBD using
@@ -12,7 +12,7 @@
 library(tidyverse)
 
 # read in csv file 
-blocktable<- read.csv("WBBA2_forblocktable_testingboreal_moretesting2.csv")
+blocktable<- read.csv("GOOD_DATA_FORRUN_FIXING_NOOBSPOSS_Better.csv")
 
 print(blocktable)
 
@@ -40,7 +40,7 @@ birds_sum <- blocktable %>%
 birds_sum <- birds_sum %>%
   mutate(col_order = 4)
 blocktable <- blocktable %>%
-  mutate(col_order = rep(c(1:3), 4))
+  mutate(col_order = rep(c(1:3), 230))
 blocktable <- bind_rows(blocktable, birds_sum) %>%
   arrange(common_name, col_order)
 
@@ -82,3 +82,4 @@ blocktable <- bind_rows(blocktable, birds_sum) %>%
 for( i in unique_species){
   write.table(filter(blocktable , common_name == i ), file = paste0(i, '.csv'), row.names=F, col.names=T, sep=",")
 }
+
