@@ -25,6 +25,8 @@ group-checklist-discrepancies - Checks for records on a shared group ID that are
 
 input-and-output - Pinning different ways to input and output eBird data.
 
+min-max-date - find early and late date per species
+
 obsposs-extraction - Pulls out the joint observed/possible species for WBBA.
 
 one-row-per-species-per-block - This cuts the EBD down to 1 row for each unique coded species per block.
