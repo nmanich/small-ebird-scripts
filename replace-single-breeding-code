@@ -2,6 +2,7 @@
 # useful to catch up the masterEBD if a single change is made online
 # purposefully clunky, uses OBSID and original value so you don't screw anything else up
 
+#note: beware blank spaces in breeding codes, if code is really "H " it will not match.
 # replace breeding code
 fullebd$BREEDING.CODE[fullebd$BREEDING.CODE == "NC" & fullebd$GLOBAL.UNIQUE.IDENTIFIER == 'URN:CornellLabOfOrnithology:EBIRD:OBS491498268'] <- "H"
 # replace breeding category
