@@ -39,6 +39,8 @@ s-rank - Pulls specific species and certain columns, and outputs one csv per spe
 
 sensitive_species_per_block - filters the records down to the single highest breeding category per block
 
+straggler-code-fixing - similar to replace-single-breeding code, manual changes of breeding code and breeding categories
+
 split-by-county - Splits the download into separate files by county (could be modified to do a file per species, or any other column).
 
 split-EBD-by-family - Splits the EBD download into separate csv files by bird family.
