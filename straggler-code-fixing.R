@@ -104,3 +104,4 @@ ebird = ebird %>%
 anti_join_original <- anti_join(ebird, ebird2, by = "combined")
 #rows from 2 that changed
 anti_join_new <- anti_join(ebird2, ebird, by = "combined")
+
