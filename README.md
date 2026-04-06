@@ -23,6 +23,8 @@ extract-rows - Simple way to pull out rows based on matching specific text in a 
 
 group-checklist-discrepancies - Checks for records on a shared group ID that are coded differently. 
 
+hotspot-list - pulls the hotspots for a region including a frequency of use
+
 input-and-output - Pinning different ways to input and output eBird data.
 
 min-max-date - find early and late date per species
