@@ -21,6 +21,8 @@ exports-checklists-with-no-codes - This script searches for checklists with no c
 
 extract-rows - Simple way to pull out rows based on matching specific text in a column.
 
+extract-SGCN - Pulls data for all WI SGCN species.
+
 group-checklist-discrepancies - Checks for records on a shared group ID that are coded differently. 
 
 hotspot-list - pulls the hotspots for a region including a frequency of use
