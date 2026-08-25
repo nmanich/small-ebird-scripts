@@ -14,10 +14,15 @@ library(auk)
 ebd <- read_ebd("ebd_US-WI_201501_201912_relJan-2022.txt", unique = FALSE, rollup = FALSE)
 
 
-### 2 different formats to Output Data
+### 3 different ways to Output Data
 
 #Write out a txt file
 write.table(ebird, file='C:\\Users\\nicho\\Desktop\\Jan2022Database\\YourOutputFile.txt', sep = "\t", row.names = FALSE)
 
 #Write out a csv file
 write.csv(ebird, file= "YourOutputfile.csv", row.names=FALSE)
+
+# this package was used by Gabriel in standardize-ebd and somehow helps with character encoding when I'm making the final database version
+library(pgirmess)                                                                                
+#export EBD plus sensitive species plus zero count records 
+write.delim(ebird, file = "WBBA2_ATLASWI_plussensitivepluszerocount_EBDMar2023_GOOD_082526.txt", sep="\t")
