@@ -1,5 +1,7 @@
 # pulling out WI SGCN species
 
+# First, point R to the working directory where your file is
+
 # import EBD file
 ebird <- read.delim("WBBA2_ATLASWI_plussensitivepluszerocount_EBDMar2023_GOOD_111725.txt", quote = "", as.is = TRUE)
 
