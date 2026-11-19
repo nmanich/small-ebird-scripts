@@ -1,6 +1,9 @@
 # pulling out WI SGCN species
 
 # First, point R to the working directory where your file is
+# NOTE: IN ADDITION TO THE REGULAR DOWNLOAD
+# you will have to ask Jenna Curtis at eBird for the Sensitive Species download, and do a second pass with the sensitive species
+# WI Sensitive species: https://ebird.org/region/US-WI/post/new-sensitive-species-in-ebird-for-wisconsin
 
 # import EBD file
 ebird <- read.delim("WBBA2_ATLASWI_plussensitivepluszerocount_EBDMar2023_GOOD_111725.txt", quote = "", as.is = TRUE)
